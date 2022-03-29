@@ -1,0 +1,29 @@
+{
+  "name": "pipiwyg/sabl-ui",
+  "description": "Simple Address Book Library - UI - Composer Package",
+  "homepage": "https://pip.co.za",
+  "type": "library",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Quintin Stoltz",
+      "email": "qstoltz@gmail.com"
+    }
+  ],
+  "require": {
+    "php": "^7.3",
+    "illuminate/support": "^8.75"
+  },
+  "autoload": {
+    "psr-4": {
+      "PipIWYG\\SablCore\\": "src/"
+    }
+  },
+  "extra": {
+      "laravel": {
+        "providers": [
+          "PipIWYG\\SablUI\\SablUIServiceProvider"
+        ]
+      }
+  }
+}
