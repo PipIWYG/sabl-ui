@@ -16,7 +16,7 @@
   },
   "autoload": {
     "psr-4": {
-      "PipIWYG\\SablCore\\": "src/"
+      "PipIWYG\\SablUI\\": "src/"
     }
   },
   "extra": {

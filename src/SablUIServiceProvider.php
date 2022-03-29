@@ -1,12 +1,12 @@
 <?php
-namespace PipIWYG\SablCore;
+namespace PipIWYG\SablUI;
 
 use Illuminate\Support\ServiceProvider;
 
 /**
  * Class SablUIServiceProvider
  *
- * @package PipIWYG\SablCore
+ * @package PipIWYG\SablUI
  * @author Quintin Stoltz<qstoltz@gmail.com>
  */
 class SablUIServiceProvider
@@ -31,9 +31,9 @@ class SablUIServiceProvider
     protected function defineRoutes()
     {
         // Check for cached routes
-        if (app()->routesAreCached()) {
+        if (app()->routesAreCached())
             return;
-        }
+
         // Load routes from...
         $this->loadRoutesFrom(__DIR__ . '/Http/routes.php');
     }
